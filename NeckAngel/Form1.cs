@@ -12,15 +12,19 @@ namespace NeckAngel
 {
     public partial class Form1 : Form
     {
-        public static int Interval = 10;
+        public static int Interval
+        {
+            get => t.Interval / 1000;
+            set => t.Interval = 1000 * value;
+        }
         public static string CustomString = "펴";
-        Timer t;
+        static Timer t;
         public Form1()
         {
             InitializeComponent();
             t = new Timer()
             {
-                Interval = 1000 * Interval,
+                Interval = 10000,
                 Enabled = true
             };
             t.Tick += T_Tick;
