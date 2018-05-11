@@ -7,3 +7,5 @@
 목 상태가 위험한 내 친구 [@cxbt](https://github.com/cxbt) 를 위하여 ~~~
 
 와 정말 대단해 ~~
+
+## [다운로드](https://github.com/phillyai/NeckAngel/releases/tag/1)
