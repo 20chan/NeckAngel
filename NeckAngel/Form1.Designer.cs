@@ -29,11 +29,63 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.설정SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.종료QToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "척추의 요정";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.설정SToolStripMenuItem,
+            this.종료QToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(172, 76);
+            // 
+            // 설정SToolStripMenuItem
+            // 
+            this.설정SToolStripMenuItem.Name = "설정SToolStripMenuItem";
+            this.설정SToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
+            this.설정SToolStripMenuItem.Text = "설정(&S)";
+            this.설정SToolStripMenuItem.Click += new System.EventHandler(this.설정SToolStripMenuItem_Click);
+            // 
+            // 종료QToolStripMenuItem
+            // 
+            this.종료QToolStripMenuItem.Name = "종료QToolStripMenuItem";
+            this.종료QToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
+            this.종료QToolStripMenuItem.Text = "종료(&Q)";
+            this.종료QToolStripMenuItem.Click += new System.EventHandler(this.종료QToolStripMenuItem_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(274, 229);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 설정SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 종료QToolStripMenuItem;
     }
 }
 
