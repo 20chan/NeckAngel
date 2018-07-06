@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace NeckAngel
@@ -14,6 +14,9 @@ namespace NeckAngel
         [STAThread]
         static void Main()
         {
+            var mutex = new Mutex(true, "NeckAngel");
+            if (!mutex.WaitOne(1000))
+                return;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new Form1();
