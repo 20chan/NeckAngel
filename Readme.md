@@ -10,4 +10,4 @@
 
 와 정말 대단해 ~~
 
-## [다운로드](https://github.com/phillyai/NeckAngel/releases/tag/1)
+## [다운로드](https://github.com/20chan/NeckAngel/releases)
